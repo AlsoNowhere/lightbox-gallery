@@ -1,0 +1,23 @@
+
+@import "./privateui.css";
+
+@import "./main.css";
+
+@import "./animations/fade-in.css";
+
+/* Structure */
+
+@import "./structure/header.css";
+@import "./structure/footer.css";
+@import "./structure/aside.css";
+@import "./structure/main.css";
+
+@import "./components/loading.css";
+@import "./components/modal.css";
+
+/* Elements */
+@import "./elements/forms.css";
+
+/* Widgets */
+@import "./widgets/toast.css";
+@import "./widgets/flickr.css";

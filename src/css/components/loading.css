@@ -1,0 +1,16 @@
+
+div.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 10vh;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+div.loading.show {
+    opacity: 1;
+}

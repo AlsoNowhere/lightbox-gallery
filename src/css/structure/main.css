@@ -1,0 +1,31 @@
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+main > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.default-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+@media screen and (min-aspect-ratio: 1) {
+    div.default-text {
+        font-size: 5vh;
+    }
+}
+@media screen and (max-aspect-ratio: 1) {
+    div.default-text {
+        font-size: 5vw;
+    }
+}

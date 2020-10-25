@@ -1,0 +1,49 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: rgba(68, 68, 68, 0.7);
+    box-shadow: 2px 2px 2px #444;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 28px;
+    color: #fff;
+    line-height: 1.5em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: "Syne Mono", monospace;
+}
+
+header > div {
+    display: flex;
+}
+
+header button {
+    width: calc(2.25rem * 1.5);
+    height: calc(2.25rem * 1.5);
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+header button span {
+    transition: 0.3s;
+}
+
+header button span.active {
+    transform: rotate(180deg);
+}
+
+header p {
+    width: 3.5em;
+    margin: 0;
+    margin-right: 3.5em;
+    color: #fff;
+    line-height: 3.5em;
+    text-align: center;
+}
