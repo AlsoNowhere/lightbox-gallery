@@ -1,0 +1,32 @@
+
+section.toast-widget {
+    position: fixed;
+    z-index: 4;
+    bottom: 28px;
+    right: 28px;
+    width: calc(100% - 28px * 2);
+    max-width: min(40vw, 400px);
+    padding: 7px;
+    padding-right: 49px;
+    background: #e45b5b;
+    border: 1px solid #ca4444;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #444;
+    opacity: 0;
+    animation: 0.7s fade-in linear forwards;
+}
+
+section.toast-widget > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+}
+
+section.toast-widget > p {
+    margin: 0;
+    color: #fff;
+    line-height: 28px;
+}

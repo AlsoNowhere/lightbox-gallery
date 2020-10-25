@@ -1,0 +1,67 @@
+
+aside {
+    position: fixed;
+    z-index: 3;
+    top: calc(2.25rem * 1.5);
+    right: calc(-300px + 2.25rem * 1.5);
+    width: 300px;
+    background: rgba(68, 68, 68, 0.8);
+    transition: 0.3s;
+}
+
+aside.active {
+    right: 0px;
+}
+
+aside > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - 2.25rem * 1.5 - min(20vh, 200px) - min(5vh, 50px));
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: lightgrey darkgrey;
+}
+
+aside > ul::-webkit-scrollbar {
+    width: 12px;
+}
+aside > ul::-webkit-scrollbar-track {
+    background: darkgrey;
+}
+aside > ul::-webkit-scrollbar-thumb {
+    background-color: lightgrey;
+    border-radius: 20px;
+    border: 3px solid darkgrey;
+}
+
+aside > ul > li > button {
+    display: flex;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+aside > ul > li > button.active {
+    background: #a200b9;
+}
+
+aside > ul > li > button > span:first-child {
+    display: block;
+    width: calc(2.25rem * 1.5);
+    height: calc(2.25rem * 1.5); 
+    text-align: center;
+    line-height: calc(2.25rem * 1.5);
+}
+
+aside > ul > li > button > span:last-child {
+    display: inline-block;
+    width: calc(300px - 2.25rem * 1.5);
+    height: calc(2.25rem * 1.5); 
+    margin: 0;
+    line-height: calc(2.25rem * 1.5);
+    text-align: left;
+}
